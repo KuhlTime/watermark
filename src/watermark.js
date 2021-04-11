@@ -537,10 +537,10 @@
         function upperRight(alpha) {
           return atPos(
             function (target, mark) {
-              return target.width - (mark.width + 10)
+              return target.width - (mark.width + 100)
             },
             function (target, mark) {
-              return 10
+              return 80
             },
             alpha
           )
@@ -556,10 +556,10 @@
         function lowerLeft(alpha) {
           return atPos(
             function (target, mark) {
-              return 10
+              return 100
             },
             function (target, mark) {
-              return target.height - (mark.height + 10)
+              return target.height - (mark.height + 80)
             },
             alpha
           )
@@ -575,10 +575,10 @@
         function upperLeft(alpha) {
           return atPos(
             function (target, mark) {
-              return 10
+              return 100
             },
             function (target, mark) {
-              return 10
+              return 80
             },
             alpha
           )

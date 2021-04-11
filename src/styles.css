@@ -7,6 +7,12 @@ p {
   margin: 0;
 }
 
+select {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .github {
   position: absolute;
   display: flex;

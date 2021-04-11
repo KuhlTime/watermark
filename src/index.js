@@ -43,10 +43,27 @@ function mark() {
 
   const imageName = imageFile.name.split('.')[0]
 
+  const watermarkPosition = $('#cornerSelect').val()
+
   $('#loadingIndicator').fadeIn()
 
+  var drawFnc = () => {
+    const alpha = 0.8
+
+    switch (watermarkPosition) {
+      case 'upperLeft':
+        return watermark.image.upperLeft(alpha)
+      case 'upperRight':
+        return watermark.image.upperRight(alpha)
+      case 'lowerLeft':
+        return watermark.image.lowerLeft(alpha)
+      default:
+        return watermark.image.lowerRight(alpha)
+    }
+  }
+
   watermark([imageFile, watermarkFile])
-    .image(watermark.image.lowerRight(0.8))
+    .image(drawFnc())
     .then(img => {
       const $img = $(img)
       const base64String = $img.attr('src')
