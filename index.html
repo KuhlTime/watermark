@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="center-horizontal">
+      <header>
+        <h1>Watermarker</h1>
+        <p>by André Kuhlmann</p>
+      </header>
+      <ol class="explenation">
+        <li>Select a Watermark</li>
+        <li>Select the Image you want to add the Watermark to</li>
+      </ol>
+    </div>
+    <div class="center">
+      <div id="dropArea">
+        <label for="watermark-upload">
+          <i data-feather="droplet"></i>
+          <p>Watermark</p>
+        </label>
+        <input id="watermark-upload" accept="image/*" type="file" />
+      </div>
+      <p class="plus">+</p>
+      <div id="dropArea">
+        <label for="image-upload">
+          <i data-feather="image"></i>
+          <p>Image</p>
+        </label>
+        <input id="image-upload" accept="image/*" type="file" />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="src/index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap&display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>
