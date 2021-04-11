@@ -44,7 +44,7 @@ header > p {
 
 .center {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -52,7 +52,7 @@ header > p {
 }
 
 .center > * {
-  margin: 30px 30px;
+  margin: 0 12px;
 }
 
 .plus {
