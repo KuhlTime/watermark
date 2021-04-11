@@ -18,7 +18,7 @@
       </ol>
     </div>
     <div class="center">
-      <div id="dropArea">
+      <div class="dropArea" id="watermark">
         <label for="watermark-upload">
           <i data-feather="droplet"></i>
           <p>Watermark</p>
@@ -26,7 +26,7 @@
         <input id="watermark-upload" accept="image/*" type="file" />
       </div>
       <p class="plus">+</p>
-      <div id="dropArea">
+      <div class="dropArea" id="image">
         <label for="image-upload">
           <i data-feather="image"></i>
           <p>Image</p>
@@ -34,6 +34,8 @@
         <input id="image-upload" accept="image/*" type="file" />
       </div>
     </div>
+
+    <div id="loadingIndicator" hidden>Loading...</div>
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="src/index.js"></script>

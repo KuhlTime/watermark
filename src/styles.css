@@ -40,7 +40,7 @@ header > p {
   font-size: 42px;
 }
 
-#dropArea {
+.dropArea {
   display: flex;
   width: 140px;
   height: 140px;
@@ -54,15 +54,20 @@ header > p {
   background-color: #eee;
 }
 
-#dropArea * {
+.dropArea.selected {
+  color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.dropArea * {
   cursor: pointer;
 }
 
-#dropArea p {
+.dropArea p {
   margin-top: 6px;
 }
 
-#dropArea:hover {
+.dropArea:hover {
   border-color: #3498db;
   color: #3498db;
   transform: scale(1.1);
@@ -70,4 +75,11 @@ header > p {
 
 input[type='file'] {
   display: none;
+}
+
+#loadingIndicator {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
