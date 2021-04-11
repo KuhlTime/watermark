@@ -12,12 +12,14 @@ var imageFile
 
 $('#watermark-upload').on('change', () => {
   watermarkFile = $('#watermark-upload').prop('files')[0]
+  console.log(`Selected: ${watermarkFile.name}`)
   updateUI()
   mark()
 })
 
 $('#image-upload').on('change', () => {
   imageFile = $('#image-upload').prop('files')[0]
+  console.log(`Selected: ${imageFile.name}`)
   updateUI()
   mark()
 })
@@ -54,9 +56,12 @@ function mark() {
         a.href = base64String
         a.download = imageName + '.watermarked.png'
         a.click()
+      } else {
+        console.log('Done')
       }
 
       imageFile = undefined
+      $('#image-upload').val(null)
 
       $('#loadingIndicator').fadeOut()
 
