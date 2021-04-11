@@ -7,6 +7,19 @@ p {
   margin: 0;
 }
 
+.github {
+  position: absolute;
+  display: flex;
+  bottom: 18px;
+  right: 24px;
+  align-items: center;
+}
+
+.github > a {
+  top: 12px;
+  margin-left: 8px;
+}
+
 .center-horizontal {
   position: absolute;
   left: 50%;
